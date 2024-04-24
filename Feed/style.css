@@ -144,11 +144,38 @@
 
 .main-content {
   position: relative;
-  background-color: #eee;
+  background-color: #000;
   min-height: 100vh;
   top: 0;
   left: 80px;
   transition: all 0.5s ease;
   width: calc(100% - 80px);
   padding: 1rem;
+  padding: 0;
+}
+
+.main-container {
+  height: 100vh;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: start;
+}
+
+.header {
+  width: 60vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  filter: grayscale(100%) blur(2px);
+}
+
+.headline {
+  color: #f4f4f4;
+  filter: grayscale(0%) blur(0px);
+  backdrop-filter: blur(0px);
 }
